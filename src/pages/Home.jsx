@@ -188,7 +188,7 @@ const Home = () => {
       >
         <div className="container mx-auto px-[5%] sm:px-6 lg:px-[0%] min-h-screen">
           <div className="flex flex-col lg:flex-row-reverse items-center justify-center h-screen md:justify-between gap-0 sm:gap-12 lg-gap-20">
-            {/* Kolom Kiri */}
+            {/* Kolom Kirii */}
             <div
               className="w-full lg:w-full space-y-6 sm:space-y-8 text-left lg:text-left order-1 lg:order-1 lg: mt-0"
               data-aos="fade-right"
