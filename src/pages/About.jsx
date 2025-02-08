@@ -162,7 +162,7 @@ const About = () => {
   };
 
   return (
-    <div className="h-auto pb-[10%] text-black overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] mt-10 sm:mt-0">
+    <div id="About" className="h-auto pb-[10%] text-black overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] mt-10 sm:mt-0">
       <Header />
       <div className="w-full h-full mx-auto pt-8 sm:pt-12 relative">
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
