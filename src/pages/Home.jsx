@@ -187,7 +187,7 @@ const Home = () => {
         }`}
       >
         <div className="container mx-auto px-[5%] sm:px-6 lg:px-[0%] min-h-screen">
-          <div className="flex flex-col lg:flex-row-reverse items-center justify-center h-screen md:justify-between gap-0 sm:gap-12 lg-gap-20">
+          <div className="flex flex-col lg:flex-row-reverse items-center justify-center h-screen lg:justify-between gap-0 sm:gap-12 lg-gap-20">
             {/* Kolom Kirii */}
             <div
               className="w-full lg:w-full space-y-6 sm:space-y-8 text-left lg:text-left order-1 lg:order-1 lg: mt-0"
@@ -242,7 +242,7 @@ const Home = () => {
               <ProfileImage />
             </div>
             <div
-              className="w-full py-[10%] sm:py-0 lg:w-full h-auto lg:h-[400px] xl:h-[450px] relative flex items-center justify-center order-2 lg:hidden lg:order-2 mt-8 lg:mt-0"
+              className="w-full py-[10%] sm:py-0 lg:w-full h-auto lg:h-[400px] xl:h-[450px] relative flex items-center justify-center order-2 sm:hidden lg:order-2 mt-8 lg:mt-0"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
               data-aos="fade-left"
