@@ -46,7 +46,7 @@ const MainTitle = memo(() => (
 ));
 
 const TechStack = memo(({ tech }) => (
-  <div className="px-4 py-2 hidden sm:block rounded-full bg-black/20 backdrop-blur-sm border-black/20 text-sm text-black hover:bg-white/10 transition-colors">
+  <div className="px-4 py-2 hidden sm:block border rounded-full bg-white backdrop-blur-sm border-black text-sm text-black hover:scale-105 hover:shadow-sm transition-colors">
     {tech}
   </div>
 ));
@@ -74,9 +74,9 @@ const CTAButton = memo(({ href, text, icon: Icon }) => (
 
 const SocialLink = memo(({ icon: Icon, link }) => (
   <a href={link}>
-    <button className="group relative p-3">
-      <div className="relative rounded-xl bg-black/20 backdrop-blur-xl p-2 flex items-center justify-center border border-black/10">
-        <Icon className="w-5 h-5 text-black group-hover:text-slate-500 transition-colors" />
+    <button className="group relative p-3 hover:scale-105 transition-all duration-300">
+      <div className="relative rounded-xl bg-white group-hover:bg-[#FB9C71] backdrop-blur-xl p-2 flex items-center justify-center border border-black group-hover:border-[#FB9C71]">
+        <Icon className="w-5 h-5 text-black group-hover:text-white transition-colors" />
       </div>
     </button>
   </a>
@@ -221,7 +221,7 @@ const Home = () => {
                   <CTAButton href="" text="Contact" icon={Mail} />
                 </div>
                 <div
-                  className="hidden sm:flex gap-4 justify-start"
+                  className="sm:flex gap-4 justify-start"
                   data-aos="fade-up"
                   data-aos-delay="1600"
                 >
@@ -250,7 +250,7 @@ const Home = () => {
             >
               <div className="relative w-full opacity-90">
                 <div
-                  className={`absolute inset-0 bg-gradient-to-r from-[#FB9C71]/30 to-[#FB9C71]/30 rounded-3xl blur-3xl transition-all duration-700 ease-in-out ${
+                  className={`absolute inset-0 bg-gradient-to-r from-[#FB9C71]/20 to-[#FB9C71]/20 rounded-3xl blur-3xl transition-all duration-700 ease-in-out ${
                     isHovering ? "opacity-30 scale-105" : "opacity-20 scale-100"
                   }`}
                 ></div>

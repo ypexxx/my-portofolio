@@ -70,9 +70,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full top-0 z-50 transition-all duration-500 ${
+      className={`fixed w-full top-0 z-50 transition-all duration-75 ${
         isOpen
-          ? "bg-black/10 opacity-100"
+          ? "bg-white opacity-100"
           : scrolled
           ? "bg-black/5 backdrop-blur-xl"
           : "bg-transparent"
@@ -108,7 +108,7 @@ const Navbar = () => {
                     {item.label}
                   </span>
                   <span
-                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-black/20 transform origin-left transition-transform duration-300 ${
+                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#FB9C71] transform origin-left transition-transform duration-300 ${
                       activeSection === item.href.substring(1)
                         ? "scale-x-100"
                         : "scale-x-0 group-hover:scale-x-100"
@@ -133,7 +133,7 @@ const Navbar = () => {
             </button>
           </div>
           <div
-            className={`md:hidden h-2/5 fixed inset-0 bg-black/10 transition-all duration-300 ease-in-out ${
+            className={`md:hidden h-2/5 fixed inset-0 bg-white transition-all duration-300 ease-in-out ${
               isOpen
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-[-100%] pointer-events-none"
@@ -149,8 +149,8 @@ const Navbar = () => {
                     onClick={(e) => scrollToSection(e, item.href)}
                     className={`block px-4 py-3 text-lg font-medium transition-all duration-300 ease ${
                       activeSection === item.href.substring(1)
-                        ? "text-black"
-                        : "text-black/20 hover:text-black/10"
+                        ? "text-[#ff8046]"
+                        : "text-black/50 hover:text-black/30"
                     }`}
                     style={{
                       transitionDelay: `${index * 100}ms`,
