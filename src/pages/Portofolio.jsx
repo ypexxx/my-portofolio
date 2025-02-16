@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { db } from "../firebase";
 import { collection, getDoc, getDocs } from "firebase/firestore";
-import SwipeableViews from "react-swipeable-views";
 import PropTypes from "prop-types";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
@@ -280,7 +279,7 @@ const Portofolio = () => {
           </Tabs>
         </AppBar>
 
-        <SwipeableViews
+        <div
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
           index={value}
           onChangeIndex={setValue}
@@ -381,7 +380,7 @@ const Portofolio = () => {
               </div>
             </div>
           </TabPanel>
-        </SwipeableViews>
+        </div>
       </Box>
     </div>
   );
