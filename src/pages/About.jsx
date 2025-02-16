@@ -12,11 +12,11 @@ const Header = memo(() => (
         data-aos="zoom-in-up"
         data-aos-duration="600"
       >
-        About Me
+        About <span className="text-[#ff8046]">Me</span>
       </h2>
     </div>
     <p
-      className="mt-2 text-black max-w-2xl mx-auto text-base sm:text-lg flex items-center justify-center gap-2"
+      className="mt-2 text-black/80 max-w-2xl mx-auto text-base sm:text-lg flex items-center justify-center gap-2"
       data-aos="zoom-in-up"
       data-aos-duration="600"
     >
@@ -29,7 +29,7 @@ const ProfileImage = memo(() => (
   <div className="flex justify-end items-center lg:px-4 sm:py-0 sm:pb-0 p-0 py-2 pb-2">
     <div className="relative group" data-aos="fade-up" data-aos-duration="1000">
       <div className="relative">
-        <div className="absolute inset-0 border-4 border-black/40 rounded-full z-20 transition-all duration-700"></div>
+        <div className="absolute inset-0 border-4 border-[#FB9C71] rounded-full z-20 transition-all duration-700"></div>
         <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden transform transition-all duration-700 group-hover:scale-105">
           <img
             src="/profile.png"
@@ -45,13 +45,13 @@ const ProfileImage = memo(() => (
 
 const StatCard = memo(({ icon: Icon, value, description, animation }) => (
   <div data-aos={animation} data-aos-duration={1300} className="relative group">
-    <div className="relative z-10 bg-black/5 backdrop-blur-lg rounded-2xl p-6 border border-black/30 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+    <div className="relative z-10 bg-[#FB9C71]/15 backdrop-blur-lg rounded-2xl p-6 border border-white overflow-hidden transition-all duration-300 hover:scale-105 shadow-md hover:shadow-2xl hover:bg-[#FB9C71]/30 h-full flex flex-col justify-between">
       <div></div>
       <div className="flex items-center justify-between mb-4">
-        <div className="w-16 h-16 rounded-full flex items-center justify-center bg-black/10 transition-transform group-hover:rotate-6">
-          <Icon className="w-8 h-8 text-black" />
+        <div className="w-16 h-16 rounded-full flex items-center justify-center bg-white transition-transform group-hover:rotate-6">
+          <Icon className="w-8 h-8 text-[#ff8046]" />
         </div>
-        <span className="text-4xl font-bold text-black">{value}</span>
+        <span className="text-4xl font-bold text-[#ff8046]">{value}</span>
       </div>
 
       <div>
@@ -162,7 +162,7 @@ const About = () => {
   };
 
   return (
-    <div className="h-auto pb-[10%] text-black overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] mt-10 sm:mt-0">
+    <div id="About" className="h-auto pb-[10%] text-black overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] mt-10 sm:mt-0">
       <Header />
       <div className="w-full h-full mx-auto pt-8 sm:pt-12 relative">
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -182,7 +182,7 @@ const About = () => {
               </span>
             </h2>
             <p
-              className="text-base sm:text-lg lg:text-xl text-black leading-relaxed text-justify pb-4 sm:pb-0"
+              className="text-base sm:text-lg lg:text-xl text-black/80 leading-relaxed text-justify pb-4 sm:pb-0"
               data-aos="fade-right"
               data-aos-duration="1500"
             >
@@ -196,7 +196,7 @@ const About = () => {
                 <button
                   data-aos="fade-up"
                   data-aos-duration="800"
-                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-black/5 text-black font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl"
+                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-[#FB9C71] text-black font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl"
                 >
                   <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV{" "}
                 </button>
@@ -205,7 +205,7 @@ const About = () => {
                 <button
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-black/5 text-black font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl"
+                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-[#FB9C71] text-black font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl"
                 >
                   <Code className="w-4 h-4 sm:w-5 sm:h-5" /> View Projects{" "}
                 </button>

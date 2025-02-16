@@ -46,7 +46,7 @@ const MainTitle = memo(() => (
 ));
 
 const TechStack = memo(({ tech }) => (
-  <div className="px-4 py-2 hidden sm:block rounded-full bg-black/20 backdrop-blur-sm border-black/20 text-sm text-black hover:bg-white/10 transition-colors">
+  <div className="px-4 py-2 hidden sm:block border rounded-full bg-white backdrop-blur-sm border-black text-sm text-black hover:scale-105 hover:shadow-sm transition-colors">
     {tech}
   </div>
 ));
@@ -74,9 +74,9 @@ const CTAButton = memo(({ href, text, icon: Icon }) => (
 
 const SocialLink = memo(({ icon: Icon, link }) => (
   <a href={link}>
-    <button className="group relative p-3">
-      <div className="relative rounded-xl bg-black/20 backdrop-blur-xl p-2 flex items-center justify-center border border-black/10">
-        <Icon className="w-5 h-5 text-black group-hover:text-slate-500 transition-colors" />
+    <button className="group relative p-3 hover:scale-105 transition-all duration-300">
+      <div className="relative rounded-xl bg-white group-hover:bg-[#FB9C71] backdrop-blur-xl p-2 flex items-center justify-center border border-black group-hover:border-[#FB9C71]">
+        <Icon className="w-5 h-5 text-black group-hover:text-white transition-colors" />
       </div>
     </button>
   </a>
@@ -106,9 +106,9 @@ const WORDS = ["Bachelor Informatics Student", "Tech Enthusiast"];
 const PAUSE_DURATION = 2000;
 const TECH_STACK = ["React", "Javascript", "Node Js", "Tailwind"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "" },
-  { icon: Linkedin, link: "" },
-  { icon: Instagram, link: "" },
+  { icon: Github, link: "https://github.com/ypexxx" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/yuafiq-alfin-608114296/" },
+  { icon: Instagram, link: "https://www.instagram.com/yua_alvin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
 ];
 
 const Home = () => {
@@ -180,14 +180,14 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen lg:px-[5%] overflow-hidden" id="home">
+    <div className="min-h-screen lg:px-[5%] overflow-hidden" id="Home">
       <div
         className={`relative z-10 transition-all duration-1000 ${
           isLoaded ? "opacity-100" : "opacity-0"
         }`}
       >
         <div className="container mx-auto px-[5%] sm:px-6 lg:px-[0%] min-h-screen">
-          <div className="flex flex-col lg:flex-row-reverse items-center justify-center h-screen md:justify-between gap-0 sm:gap-12 lg-gap-20">
+          <div className="flex flex-col lg:flex-row-reverse items-center justify-center h-screen lg:justify-between gap-0 sm:gap-12 lg-gap-20">
             {/* Kolom Kirii */}
             <div
               className="w-full lg:w-full space-y-6 sm:space-y-8 text-left lg:text-left order-1 lg:order-1 lg: mt-0"
@@ -217,11 +217,11 @@ const Home = () => {
                   data-aos="fade-up"
                   data-aos-delay="1400"
                 >
-                  <CTAButton href="" text="Portofolio" icon={ExternalLink} />
+                  <CTAButton href="#Portofolio" text="Portofolio" icon={ExternalLink} />
                   <CTAButton href="" text="Contact" icon={Mail} />
                 </div>
                 <div
-                  className="hidden sm:flex gap-4 justify-start"
+                  className="sm:flex gap-4 justify-start"
                   data-aos="fade-up"
                   data-aos-delay="1600"
                 >
@@ -242,7 +242,7 @@ const Home = () => {
               <ProfileImage />
             </div>
             <div
-              className="w-full py-[10%] sm:py-0 lg:w-full h-auto lg:h-[400px] xl:h-[450px] relative flex items-center justify-center order-2 lg:hidden lg:order-2 mt-8 lg:mt-0"
+              className="w-full py-[10%] sm:py-0 lg:w-full h-auto lg:h-[400px] xl:h-[450px] relative flex items-center justify-center order-2 sm:hidden lg:order-2 mt-8 lg:mt-0"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
               data-aos="fade-left"
@@ -250,7 +250,7 @@ const Home = () => {
             >
               <div className="relative w-full opacity-90">
                 <div
-                  className={`absolute inset-0 bg-gradient-to-r from-[#FB9C71]/30 to-[#FB9C71]/30 rounded-3xl blur-3xl transition-all duration-700 ease-in-out ${
+                  className={`absolute inset-0 bg-gradient-to-r from-[#FB9C71]/20 to-[#FB9C71]/20 rounded-3xl blur-3xl transition-all duration-700 ease-in-out ${
                     isHovering ? "opacity-30 scale-105" : "opacity-20 scale-100"
                   }`}
                 ></div>
