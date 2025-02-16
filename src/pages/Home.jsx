@@ -106,9 +106,9 @@ const WORDS = ["Bachelor Informatics Student", "Tech Enthusiast"];
 const PAUSE_DURATION = 2000;
 const TECH_STACK = ["React", "Javascript", "Node Js", "Tailwind"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "" },
-  { icon: Linkedin, link: "" },
-  { icon: Instagram, link: "" },
+  { icon: Github, link: "https://github.com/ypexxx" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/yuafiq-alfin-608114296/" },
+  { icon: Instagram, link: "https://www.instagram.com/yua_alvin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
 ];
 
 const Home = () => {
@@ -217,7 +217,7 @@ const Home = () => {
                   data-aos="fade-up"
                   data-aos-delay="1400"
                 >
-                  <CTAButton href="" text="Portofolio" icon={ExternalLink} />
+                  <CTAButton href="#Portofolio" text="Portofolio" icon={ExternalLink} />
                   <CTAButton href="" text="Contact" icon={Mail} />
                 </div>
                 <div

@@ -29,7 +29,7 @@ const ProfileImage = memo(() => (
   <div className="flex justify-end items-center lg:px-4 sm:py-0 sm:pb-0 p-0 py-2 pb-2">
     <div className="relative group" data-aos="fade-up" data-aos-duration="1000">
       <div className="relative">
-        <div className="absolute inset-0 border-4 border-black/40 rounded-full z-20 transition-all duration-700"></div>
+        <div className="absolute inset-0 border-4 border-[#FB9C71] rounded-full z-20 transition-all duration-700"></div>
         <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden transform transition-all duration-700 group-hover:scale-105">
           <img
             src="/profile.png"
@@ -45,7 +45,7 @@ const ProfileImage = memo(() => (
 
 const StatCard = memo(({ icon: Icon, value, description, animation }) => (
   <div data-aos={animation} data-aos-duration={1300} className="relative group">
-    <div className="relative z-10 bg-white backdrop-blur-lg rounded-2xl p-6 border border-black/20 overflow-hidden transition-all duration-300 hover:scale-105 shadow-md hover:shadow-2xl hover:bg-[#FB9C71]/15 h-full flex flex-col justify-between">
+    <div className="relative z-10 bg-[#FB9C71]/15 backdrop-blur-lg rounded-2xl p-6 border border-white overflow-hidden transition-all duration-300 hover:scale-105 shadow-md hover:shadow-2xl hover:bg-[#FB9C71]/30 h-full flex flex-col justify-between">
       <div></div>
       <div className="flex items-center justify-between mb-4">
         <div className="w-16 h-16 rounded-full flex items-center justify-center bg-white transition-transform group-hover:rotate-6">
